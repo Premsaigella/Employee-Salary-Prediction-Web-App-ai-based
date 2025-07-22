@@ -1,1 +1,8 @@
+import pickle
+
+with open('salary_predictor__corrected.pkl', 'rb') as f:
+    model = pickle.load(f)
+
+# Use it:
+prediction = model.predict(new_data)
 
